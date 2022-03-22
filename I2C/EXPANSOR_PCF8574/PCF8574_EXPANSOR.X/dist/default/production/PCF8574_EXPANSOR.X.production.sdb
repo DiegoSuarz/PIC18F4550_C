@@ -1,0 +1,259 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"33 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\EXPANSOR_PCF8574\PCF8574_EXPANSOR.X/I2C_Lib.h
+[v _I2C_Init_Master I2C_Init_Master `(v  1 e 1 0 ]
+"48
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+"57
+[v _I2C_Write_Data I2C_Write_Data `(v  1 e 1 0 ]
+"70
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+"79
+[v _I2C_Restart I2C_Restart `(v  1 e 1 0 ]
+"86
+[v _I2C_Reception I2C_Reception `(v  1 e 1 0 ]
+"92
+[v _I2C_Read_Slave I2C_Read_Slave `(uc  1 e 1 0 ]
+"128
+[v _I2C_Idle I2C_Idle `(v  1 e 1 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"18 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\EXPANSOR_PCF8574\PCF8574_EXPANSOR.X\main.c
+[v _WritePCF WritePCF `(v  1 e 1 0 ]
+"25
+[v _ReadPCF ReadPCF `(uc  1 e 1 0 ]
+"37
+[v _main main `(v  1 e 1 0 ]
+"3264 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18f4550.h
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3626
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"4002
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"6582
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"6807
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+[s S38 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"6824
+[u S47 . 1 `S38 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES47  1 e 1 @4037 ]
+"6869
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+"6939
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S59 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"7022
+[s S62 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S65 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S74 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S79 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S85 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S90 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S93 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S96 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S101 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S106 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S111 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S117 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S122 . 1 `S59 1 . 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S74 1 . 1 0 `S79 1 . 1 0 `S85 1 . 1 0 `S90 1 . 1 0 `S93 1 . 1 0 `S96 1 . 1 0 `S101 1 . 1 0 `S106 1 . 1 0 `S111 1 . 1 0 `S117 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES122  1 e 1 @4039 ]
+"7187
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"7194
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"8915
+[v _ACKDT ACKDT `VEb  1 e 0 @32301 ]
+"8918
+[v _ACKEN ACKEN `VEb  1 e 0 @32300 ]
+"8921
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @32302 ]
+"9746
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"10274
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"10439
+[v _RCEN RCEN `VEb  1 e 0 @32299 ]
+"10565
+[v _SEN SEN `VEb  1 e 0 @32296 ]
+"10646
+[v _SSPIE SSPIE `VEb  1 e 0 @31979 ]
+"10649
+[v _SSPIF SSPIF `VEb  1 e 0 @31987 ]
+"10907
+[v _TRISB0 TRISB0 `VEb  1 e 0 @31896 ]
+"10910
+[v _TRISB1 TRISB1 `VEb  1 e 0 @31897 ]
+"37 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\EXPANSOR_PCF8574\PCF8574_EXPANSOR.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"39
+[v main@data_rec data_rec `uc  1 a 1 24 ]
+"57
+} 0
+"18
+[v _WritePCF WritePCF `(v  1 e 1 0 ]
+{
+[v WritePCF@Dir Dir `uc  1 a 1 wreg ]
+[v WritePCF@Dir Dir `uc  1 a 1 wreg ]
+[v WritePCF@dato dato `uc  1 p 1 2 ]
+[v WritePCF@Dir Dir `uc  1 a 1 3 ]
+"23
+} 0
+"25
+[v _ReadPCF ReadPCF `(uc  1 e 1 0 ]
+{
+[v ReadPCF@Dir Dir `uc  1 a 1 wreg ]
+"27
+[v ReadPCF@dato dato `uc  1 a 1 4 ]
+[v ReadPCF@Direcc_R Direcc_R `uc  1 a 1 3 ]
+"25
+[v ReadPCF@Dir Dir `uc  1 a 1 wreg ]
+"29
+[v ReadPCF@Dir Dir `uc  1 a 1 2 ]
+"35
+} 0
+"57 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\EXPANSOR_PCF8574\PCF8574_EXPANSOR.X/I2C_Lib.h
+[v _I2C_Write_Data I2C_Write_Data `(v  1 e 1 0 ]
+{
+[v I2C_Write_Data@dato dato `uc  1 a 1 wreg ]
+[v I2C_Write_Data@dato dato `uc  1 a 1 wreg ]
+[v I2C_Write_Data@dato dato `uc  1 a 1 1 ]
+"67
+} 0
+"79
+[v _I2C_Restart I2C_Restart `(v  1 e 1 0 ]
+{
+"84
+} 0
+"70
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+{
+"77
+} 0
+"48
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+{
+"55
+} 0
+"92
+[v _I2C_Read_Slave I2C_Read_Slave `(uc  1 e 1 0 ]
+{
+"94
+[v I2C_Read_Slave@dato dato `uc  1 a 1 1 ]
+"101
+} 0
+"86
+[v _I2C_Reception I2C_Reception `(v  1 e 1 0 ]
+{
+"90
+} 0
+"128
+[v _I2C_Idle I2C_Idle `(v  1 e 1 0 ]
+{
+"139
+} 0
+"33
+[v _I2C_Init_Master I2C_Init_Master `(v  1 e 1 0 ]
+{
+[v I2C_Init_Master@speed_master speed_master `ul  1 p 4 13 ]
+[v I2C_Init_Master@interrupt_ interrupt_ `uc  1 p 1 17 ]
+"47
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"7
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"30
+} 0

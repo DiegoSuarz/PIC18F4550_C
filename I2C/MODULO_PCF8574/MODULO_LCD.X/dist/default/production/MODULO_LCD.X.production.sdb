@@ -1,0 +1,276 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"7 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\MODULO_PCF8574\MODULO_LCD.X\LIB_PCF8574.c
+[v _I2C_Init_Master I2C_Init_Master `(v  1 e 1 0 ]
+"16
+[v _I2C_Idle I2C_Idle `(v  1 e 1 0 ]
+"24
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+"33
+[v _I2C_Write_Data I2C_Write_Data `(v  1 e 1 0 ]
+"45
+[v _I2C_Restart I2C_Restart `(v  1 e 1 0 ]
+"51
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+"63
+[v _WritePCF WritePCF `(v  1 e 1 0 ]
+"72
+[v _dato_LCD dato_LCD `(v  1 e 1 0 ]
+"90
+[v _trama_LCD trama_LCD `(v  1 e 1 0 ]
+"95
+[v _I2C_LCD_Init I2C_LCD_Init `(v  1 e 1 0 ]
+"121
+[v _I2C_LCD_Char I2C_LCD_Char `(v  1 e 1 0 ]
+"126
+[v _I2C_LCD_Cmd I2C_LCD_Cmd `(v  1 e 1 0 ]
+"131
+[v _I2C_LCD_XY I2C_LCD_XY `(v  1 e 1 0 ]
+"143
+[v _I2C_LCD_String I2C_LCD_String `(v  1 e 1 0 ]
+"18 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\MODULO_PCF8574\MODULO_LCD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"3626 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18f4550.h
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"6582
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"6807
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+[s S69 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"6824
+[u S78 . 1 `S69 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES78  1 e 1 @4037 ]
+"6869
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+"6939
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S90 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"7022
+[s S93 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S96 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S105 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S110 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S116 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S121 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S124 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S127 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S132 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S137 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S142 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S148 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S153 . 1 `S90 1 . 1 0 `S93 1 . 1 0 `S96 1 . 1 0 `S105 1 . 1 0 `S110 1 . 1 0 `S116 1 . 1 0 `S121 1 . 1 0 `S124 1 . 1 0 `S127 1 . 1 0 `S132 1 . 1 0 `S137 1 . 1 0 `S142 1 . 1 0 `S148 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES153  1 e 1 @4039 ]
+"7187
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"7194
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"8921
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @32302 ]
+"10565
+[v _SEN SEN `VEb  1 e 0 @32296 ]
+"18 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\MODULO_PCF8574\MODULO_LCD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"46
+} 0
+"131 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\MODULO_PCF8574\MODULO_LCD.X\LIB_PCF8574.c
+[v _I2C_LCD_XY I2C_LCD_XY `(v  1 e 1 0 ]
+{
+[v I2C_LCD_XY@y y `uc  1 a 1 wreg ]
+[v I2C_LCD_XY@y y `uc  1 a 1 wreg ]
+[v I2C_LCD_XY@x x `uc  1 p 1 9 ]
+[v I2C_LCD_XY@y y `uc  1 a 1 12 ]
+"141
+} 0
+"126
+[v _I2C_LCD_Cmd I2C_LCD_Cmd `(v  1 e 1 0 ]
+{
+[v I2C_LCD_Cmd@cmd cmd `uc  1 a 1 wreg ]
+[v I2C_LCD_Cmd@cmd cmd `uc  1 a 1 wreg ]
+[v I2C_LCD_Cmd@cmd cmd `uc  1 a 1 8 ]
+"129
+} 0
+"143
+[v _I2C_LCD_String I2C_LCD_String `(v  1 e 1 0 ]
+{
+[v I2C_LCD_String@text text `*.25uc  1 p 2 9 ]
+"149
+} 0
+"121
+[v _I2C_LCD_Char I2C_LCD_Char `(v  1 e 1 0 ]
+{
+[v I2C_LCD_Char@letra letra `uc  1 a 1 wreg ]
+[v I2C_LCD_Char@letra letra `uc  1 a 1 wreg ]
+[v I2C_LCD_Char@letra letra `uc  1 a 1 8 ]
+"124
+} 0
+"95
+[v _I2C_LCD_Init I2C_LCD_Init `(v  1 e 1 0 ]
+{
+"104
+[v I2C_LCD_Init@i i `uc  1 a 1 22 ]
+"119
+} 0
+"90
+[v _trama_LCD trama_LCD `(v  1 e 1 0 ]
+{
+[v trama_LCD@ctrl ctrl `uc  1 a 1 wreg ]
+[v trama_LCD@ctrl ctrl `uc  1 a 1 wreg ]
+[v trama_LCD@cmd cmd `uc  1 p 1 6 ]
+[v trama_LCD@ctrl ctrl `uc  1 a 1 7 ]
+"93
+} 0
+"72
+[v _dato_LCD dato_LCD `(v  1 e 1 0 ]
+{
+[v dato_LCD@ctrl ctrl `uc  1 a 1 wreg ]
+"73
+[v dato_LCD@dato dato `uc  1 a 1 5 ]
+"72
+[v dato_LCD@ctrl ctrl `uc  1 a 1 wreg ]
+[v dato_LCD@cmd cmd `uc  1 p 1 3 ]
+"74
+[v dato_LCD@ctrl ctrl `uc  1 a 1 4 ]
+"88
+} 0
+"63
+[v _WritePCF WritePCF `(v  1 e 1 0 ]
+{
+[v WritePCF@dato dato `uc  1 a 1 wreg ]
+[v WritePCF@dato dato `uc  1 a 1 wreg ]
+[v WritePCF@dato dato `uc  1 a 1 2 ]
+"68
+} 0
+"33
+[v _I2C_Write_Data I2C_Write_Data `(v  1 e 1 0 ]
+{
+[v I2C_Write_Data@dato dato `uc  1 a 1 wreg ]
+[v I2C_Write_Data@dato dato `uc  1 a 1 wreg ]
+[v I2C_Write_Data@dato dato `uc  1 a 1 1 ]
+"43
+} 0
+"45
+[v _I2C_Restart I2C_Restart `(v  1 e 1 0 ]
+{
+"50
+} 0
+"51
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+{
+"58
+} 0
+"24
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+{
+"31
+} 0
+"16
+[v _I2C_Idle I2C_Idle `(v  1 e 1 0 ]
+{
+"21
+} 0
+"7
+[v _I2C_Init_Master I2C_Init_Master `(v  1 e 1 0 ]
+{
+[v I2C_Init_Master@speed_master speed_master `ul  1 p 4 13 ]
+"14
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"7
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"30
+} 0
