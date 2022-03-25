@@ -1,0 +1,644 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"32 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X\main.c
+[e E3596 . `uc
+reg_Segundos 0
+reg_min 1
+reg_horas 2
+reg_dates 3
+reg_dias 4
+reg_meses 5
+reg_years 6
+]
+"34 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X/I2C_Lib.h
+[v _I2C_Init_Master I2C_Init_Master `(v  1 e 1 0 ]
+"49
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+"58
+[v _I2C_Write_Data I2C_Write_Data `(v  1 e 1 0 ]
+"71
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+"80
+[v _I2C_Restart I2C_Restart `(v  1 e 1 0 ]
+"87
+[v _I2C_Reception I2C_Reception `(v  1 e 1 0 ]
+"93
+[v _I2C_Read_Slave I2C_Read_Slave `(uc  1 e 1 0 ]
+"104
+[v _I2C_N_ACK I2C_N_ACK `(v  1 e 1 0 ]
+"129
+[v _I2C_Idle I2C_Idle `(v  1 e 1 0 ]
+"55 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X/lib_lcd_20x4.h
+[v _enviar_dato enviar_dato `(v  1 e 1 0 ]
+"93
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"132
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"138
+[v _Lcd_Char Lcd_Char `(v  1 e 1 0 ]
+"145
+[v _Lcd_XY Lcd_XY `(v  1 e 1 0 ]
+"163
+[v _Lcd_Out Lcd_Out `(v  1 e 1 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"72 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"55 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X\main.c
+[v _bin_bcd_convert bin_bcd_convert `(uc  1 e 1 0 ]
+"64
+[v _ConfiRegRTC ConfiRegRTC `(v  1 e 1 0 ]
+"91
+[v _bcd_bin_convert bcd_bin_convert `(uc  1 e 1 0 ]
+"96
+[v _getDataDs1307 getDataDs1307 `(uc  1 e 1 0 ]
+"137
+[v _readDs1307_sprintf readDs1307_sprintf `(v  1 e 1 0 ]
+"147
+[v _main main `(i  1 e 2 0 ]
+[s S252 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"3291 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18f4550.h
+[s S261 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S270 . 1 `S252 1 . 1 0 `S261 1 . 1 0 ]
+[v _LATDbits LATDbits `VES270  1 e 1 @3980 ]
+"3626
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S212 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"4034
+[s S221 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+[u S230 . 1 `S212 1 . 1 0 `S221 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES230  1 e 1 @3989 ]
+"6582
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"6807
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+[s S38 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"6824
+[u S47 . 1 `S38 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES47  1 e 1 @4037 ]
+"6869
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+"6939
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S59 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"7022
+[s S62 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S65 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S74 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S79 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S85 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S90 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S93 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S96 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S101 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S106 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S111 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S117 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S122 . 1 `S59 1 . 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S74 1 . 1 0 `S79 1 . 1 0 `S85 1 . 1 0 `S90 1 . 1 0 `S93 1 . 1 0 `S96 1 . 1 0 `S101 1 . 1 0 `S106 1 . 1 0 `S111 1 . 1 0 `S117 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES122  1 e 1 @4039 ]
+"7187
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"7194
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"8915
+[v _ACKDT ACKDT `VEb  1 e 0 @32301 ]
+"8918
+[v _ACKEN ACKEN `VEb  1 e 0 @32300 ]
+"8921
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @32302 ]
+"9746
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"10274
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"10439
+[v _RCEN RCEN `VEb  1 e 0 @32299 ]
+"10565
+[v _SEN SEN `VEb  1 e 0 @32296 ]
+"10646
+[v _SSPIE SSPIE `VEb  1 e 0 @31979 ]
+"10649
+[v _SSPIF SSPIF `VEb  1 e 0 @31987 ]
+"10907
+[v _TRISB0 TRISB0 `VEb  1 e 0 @31896 ]
+"10910
+[v _TRISB1 TRISB1 `VEb  1 e 0 @31897 ]
+"55 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+[s S311 . 7 `uc 1 segundos 1 0 `uc 1 minutos 1 1 `uc 1 horas 1 2 `uc 1 dias 1 3 `uc 1 dates 1 4 `uc 1 meses 1 5 `uc 1 years 1 6 ]
+"45 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X\main.c
+[v _data data `S311  1 e 7 0 ]
+"61
+[v _aux aux `[20]uc  1 e 20 0 ]
+"147
+[v _main main `(i  1 e 2 0 ]
+{
+"179
+} 0
+"137
+[v _readDs1307_sprintf readDs1307_sprintf `(v  1 e 1 0 ]
+{
+"145
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S886 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+"13
+[s S889 _IO_FILE 11 `S886 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S889  1 a 11 12 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 10 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 0 ]
+[v sprintf@fmt fmt `*.25Cuc  1 p 2 2 ]
+"23
+} 0
+"1390 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1393
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 89 ]
+[s S921 _IO_FILE 0 ]
+"1390
+[v vfprintf@fp fp `*.39S921  1 p 2 83 ]
+[v vfprintf@fmt fmt `*.25Cuc  1 p 2 85 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 87 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 73 ]
+"695
+[v vfpfcnvrt@done done `i  1 a 2 81 ]
+[s S921 _IO_FILE 0 ]
+"692
+[v vfpfcnvrt@fp fp `*.39S921  1 p 2 63 ]
+[v vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 65 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 67 ]
+"1387
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"290
+[v dtoa@n n `o  1 a 8 53 ]
+"289
+[v dtoa@i i `i  1 a 2 61 ]
+[v dtoa@s s `i  1 a 2 51 ]
+[v dtoa@w w `i  1 a 2 49 ]
+[v dtoa@p p `i  1 a 2 47 ]
+[s S921 _IO_FILE 0 ]
+"287
+[v dtoa@fp fp `*.39S921  1 p 2 27 ]
+[v dtoa@d d `o  1 p 8 29 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 25 ]
+[v pad@i i `i  1 a 2 23 ]
+[s S921 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S921  1 p 2 16 ]
+[v pad@buf buf `*.39uc  1 p 2 18 ]
+[v pad@p p `i  1 p 2 20 ]
+"95
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.39Cuc  1 a 2 2 ]
+"5
+[v strlen@s s `*.39Cuc  1 p 2 0 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 14 ]
+"10
+[v fputs@c c `uc  1 a 1 13 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 9 ]
+[u S886 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S889 _IO_FILE 11 `S886 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S889  1 p 2 11 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S886 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S889 _IO_FILE 11 `S886 1 . 3 0 `i 1 count 2 3 `[2]uc 1 ungetbuf 2 5 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S889  1 p 2 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 18 ]
+"4
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 17 ]
+[v ___aomod@counter counter `uc  1 a 1 16 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 0 ]
+[v ___aomod@divisor divisor `o  1 p 8 8 ]
+"36
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 18 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 17 ]
+[v ___aodiv@counter counter `uc  1 a 1 16 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 0 ]
+[v ___aodiv@divisor divisor `o  1 p 8 8 ]
+"43
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 15 ]
+[v atoi@neg neg `i  1 a 2 13 ]
+"4
+[v atoi@s s `*.25Cuc  1 p 2 7 ]
+"16
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 0 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 0 ]
+"8
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"96 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X\main.c
+[v _getDataDs1307 getDataDs1307 `(uc  1 e 1 0 ]
+{
+[v getDataDs1307@dato dato `uc  1 a 1 wreg ]
+"97
+[v getDataDs1307@data data `uc  1 a 1 3 ]
+"96
+[v getDataDs1307@dato dato `uc  1 a 1 wreg ]
+"98
+[v getDataDs1307@dato dato `uc  1 a 1 2 ]
+"109
+} 0
+"91
+[v _bcd_bin_convert bcd_bin_convert `(uc  1 e 1 0 ]
+{
+[v bcd_bin_convert@dato dato `uc  1 a 1 wreg ]
+[v bcd_bin_convert@dato dato `uc  1 a 1 wreg ]
+[v bcd_bin_convert@dato dato `uc  1 a 1 1 ]
+"94
+} 0
+"93 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X/I2C_Lib.h
+[v _I2C_Read_Slave I2C_Read_Slave `(uc  1 e 1 0 ]
+{
+"95
+[v I2C_Read_Slave@dato dato `uc  1 a 1 1 ]
+"102
+} 0
+"87
+[v _I2C_Reception I2C_Reception `(v  1 e 1 0 ]
+{
+"91
+} 0
+"104
+[v _I2C_N_ACK I2C_N_ACK `(v  1 e 1 0 ]
+{
+"110
+} 0
+"93 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X/lib_lcd_20x4.h
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"130
+} 0
+"34 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X/I2C_Lib.h
+[v _I2C_Init_Master I2C_Init_Master `(v  1 e 1 0 ]
+{
+[v I2C_Init_Master@speed_master speed_master `ul  1 p 4 13 ]
+[v I2C_Init_Master@interrupt_ interrupt_ `uc  1 p 1 17 ]
+"48
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"7
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"30
+} 0
+"64 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X\main.c
+[v _ConfiRegRTC ConfiRegRTC `(v  1 e 1 0 ]
+{
+[v ConfiRegRTC@dir dir `uc  1 a 1 wreg ]
+"65
+[v ConfiRegRTC@data data `uc  1 a 1 15 ]
+"64
+[v ConfiRegRTC@dir dir `uc  1 a 1 wreg ]
+[v ConfiRegRTC@dato dato `uc  1 p 1 12 ]
+[v ConfiRegRTC@reg reg `uc  1 p 1 13 ]
+"67
+[v ConfiRegRTC@dir dir `uc  1 a 1 14 ]
+"89
+} 0
+"55
+[v _bin_bcd_convert bin_bcd_convert `(uc  1 e 1 0 ]
+{
+[v bin_bcd_convert@dato dato `uc  1 a 1 wreg ]
+"56
+[v bin_bcd_convert@data data `uc  1 a 1 10 ]
+"55
+[v bin_bcd_convert@dato dato `uc  1 a 1 wreg ]
+"57
+[v bin_bcd_convert@dato dato `uc  1 a 1 11 ]
+"59
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"145 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X/lib_lcd_20x4.h
+[v _Lcd_XY Lcd_XY `(v  1 e 1 0 ]
+{
+[v Lcd_XY@y y `uc  1 a 1 wreg ]
+[v Lcd_XY@y y `uc  1 a 1 wreg ]
+[v Lcd_XY@x x `uc  1 p 1 4 ]
+[v Lcd_XY@y y `uc  1 a 1 7 ]
+"155
+} 0
+"132
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@cmd cmd `uc  1 a 1 wreg ]
+[v Lcd_Cmd@cmd cmd `uc  1 a 1 wreg ]
+[v Lcd_Cmd@cmd cmd `uc  1 a 1 3 ]
+"137
+} 0
+"163
+[v _Lcd_Out Lcd_Out `(v  1 e 1 0 ]
+{
+[v Lcd_Out@text text `*.35uc  1 p 2 4 ]
+"170
+} 0
+"138
+[v _Lcd_Char Lcd_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Char@letra letra `uc  1 a 1 wreg ]
+[v Lcd_Char@letra letra `uc  1 a 1 wreg ]
+[v Lcd_Char@letra letra `uc  1 a 1 3 ]
+"143
+} 0
+"55
+[v _enviar_dato enviar_dato `(v  1 e 1 0 ]
+{
+[v enviar_dato@cmd cmd `uc  1 a 1 wreg ]
+[v enviar_dato@cmd cmd `uc  1 a 1 wreg ]
+[v enviar_dato@cmd cmd `uc  1 a 1 2 ]
+"91
+} 0
+"58 D:\Archivos\Programacion\Microcontroladores\PIC\Lenguaje C\XC8\pic18f4550\EJEMPLOS\I2C\RTC_DS1307_V1\RTC_DS1307.X/I2C_Lib.h
+[v _I2C_Write_Data I2C_Write_Data `(v  1 e 1 0 ]
+{
+[v I2C_Write_Data@dato dato `uc  1 a 1 wreg ]
+[v I2C_Write_Data@dato dato `uc  1 a 1 wreg ]
+[v I2C_Write_Data@dato dato `uc  1 a 1 1 ]
+"68
+} 0
+"80
+[v _I2C_Restart I2C_Restart `(v  1 e 1 0 ]
+{
+"85
+} 0
+"71
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+{
+"78
+} 0
+"49
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+{
+"56
+} 0
+"129
+[v _I2C_Idle I2C_Idle `(v  1 e 1 0 ]
+{
+"140
+} 0
